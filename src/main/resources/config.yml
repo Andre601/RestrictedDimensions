@@ -1,0 +1,18 @@
+#  _____  _   _
+# |  __ \| \ | |
+# | |__) |  \| |
+# |  _  /| . ` |
+# | | \ \| |\  |
+# |_|  \_\_| \_|
+# RestrictedNether by Andre_601
+#
+# GitHub: https://github.com/Andre601/RestrictedNether
+
+#
+#  Feel free to disable the RN-banner (like above), if you want to keep the console more clean.
+#
+ShowBanner: true
+#
+#  Basic no permission message. The permission to access the nether is restrictednether.allow
+#
+NoPermission: '&cYou don''t have permissions, to enter the nether!'

@@ -12,16 +12,18 @@ public class RestrictedNether extends JavaPlugin {
         saveDefaultConfig();
         PluginManager pluginManager = Bukkit.getPluginManager();
 
+        //  We don't send the banner, if the value is false (not true)
         if(getConfig().getBoolean("ShowBanner"))
             sendBanner();
 
+        //  Actually loading the events here... Or just the one.
         getLogger().info("Register Events...");
         pluginManager.registerEvents(new WorldChange(this), this);
 
         getLogger().info("RestrictedNether v" + getDescription().getVersion() + " by Andre_601 enabled!");
     }
 
-
+    //  I mean a bit advertising should be done right? Can be disabled in config tho. ;P
     private void sendBanner(){
         System.out.println("§c  _____    §4_   _ ");
         System.out.println("§c |  __ \\  §4| \\ | |");

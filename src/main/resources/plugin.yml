@@ -1,12 +1,15 @@
-name: RestrictedNether
-version: 1.0.1
-author: Andre_601
+name: RestrictedDimensions
+version: ${project.version}
+authors:
+- Andre_601
 
-main: com.andre601.restrictednether.RestrictedNether
+main: com.andre601.restricteddimensions.RestrictedDimensions
 
-api-version: 1.13
+api-version: '1.13'
+softdepend:
+- PlaceholderAPI
 
 permissions:
-  restrictednether.allow:
-    description: Allows you to access the nether.
+  restricteddimensions.bypass:
+    description: Allows you to bypass any restrictions of the plugin.
     default: op

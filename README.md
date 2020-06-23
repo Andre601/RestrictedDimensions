@@ -1,14 +1,22 @@
 [LICENSE.md]: /LICENSE.md
 
-## RestrictedNether
-RestrictedNether is a extremely simple (and I mean extremely simple!) plugin, to restrict the access to only selected people.  
-Everything is permission-based. Just give your groups/users the permission `restrictednether.allow` and they can access the nether worlds.
+## RestrictedDimensions
+*A stupidly simple plugin to deny access to dimensions.*
 
-## Commands
-None
+RestrictedDimensions is a plugin that allows you to deny access to specific dimensions.  
+Players won't be able to enter specific dimensions if they lack the permission `restricteddimensions.enter.<dimension>`
 
 ## Permissions
-- `restrictednether.allow` - Allows access to the nether-worlds
+- `restricteddimensions.enter.<dimension>`  
+Allows you access to the dimension `<dimension>`.
+- `restricteddimensions.bypass`  
+Allows you to bypass all checks and enter any dimension.
+
+## Placeholders
+RestrictedDimensions comes with support for PlaceholderAPI and brings the following placeholders to use in other plugins:
+
+- `%restricteddimensions_has_access_<world>%`  
+Returns whether the player has access to the world/dimension or not.
 
 ## License
 The source is under the MIT-license.  

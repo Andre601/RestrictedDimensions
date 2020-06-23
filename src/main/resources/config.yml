@@ -1,18 +1,29 @@
-#  _____  _   _
-# |  __ \| \ | |
-# | |__) |  \| |
-# |  _  /| . ` |
-# | | \ \| |\  |
-# |_|  \_\_| \_|
-# RestrictedNether by Andre_601
+######################################################
+# _____  _____                                       #
+# |  __ \|  __ \                                     #
+# | |__) | |  | |                                    #
+# |  _  /| |  | |                                    #
+# | | \ \| |__| |                                    #
+# |_|  \_\_____/                                     #
+#                                                    #
+# RestrictedDimensions by Andre_601                  #
+#                                                    #
+# GitHub:                                            #
+#   https://github.com/Andre601/RestrictedDimensions #
+######################################################
 #
-# GitHub: https://github.com/Andre601/RestrictedNether
-
-#
-#  Feel free to disable the RN-banner (like above), if you want to keep the console more clean.
+# Feel free to disable the RD-banner (like above), if you want to keep the console more clean.
 #
 ShowBanner: true
 #
-#  Basic no permission message. The permission to access the nether is restrictednether.allow
+# Should the plugin log denied access in the console?
+# The message would be "[RestrictedDimensions] Player {player} was denied access to the dimension {dimension_name}"
 #
-NoPermission: '&cYou don''t have permissions, to enter the nether!'
+LogDeniedAccess: true
+#
+# Message send when the player lacks the permission restricteddimensions.enter.{dimension} to enter {dimension}.
+#
+# Placeholder:
+#   %dimension%  ->  The name of the dimension the player was denied access to.
+#
+NoPermission: '&cYou don''t have permissions, to enter the dimension %dimension%!'
